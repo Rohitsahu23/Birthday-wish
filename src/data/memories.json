@@ -1,0 +1,201 @@
+[
+  {
+    "id": "1",
+    "title": "The First Meeting",
+    "date": "April 12, 2023",
+    "location": "Central Park Cafe",
+    "description": "The day my eyes met yours for the first time, Kashish. You wore that white summer dress, and time seemed to slow down. I was so nervous talking to you, but your laugh made me feel instantly at home. That was the moment everything changed.",
+    "quote": "The day I met Kashish, my ordinary life became extraordinary.",
+    "mediaUrls": [
+      "/first_meeting.jpg"
+    ],
+    "mediaType": "image",
+    "category": "milestone",
+    "icon": "❤️"
+  },
+  {
+    "id": "2",
+    "title": "Our First Message",
+    "date": "April 13, 2023",
+    "location": "WhatsApp Chat",
+    "description": "I couldn't wait to text you. A simple 'Hey, it was really nice meeting you yesterday' turned into an all-night conversation. Typing and retyping messages, smiling at my screen, and staying up until 4 AM. That chat began a beautiful habit.",
+    "quote": "Sometimes, a simple message becomes the start of a lifetime.",
+    "mediaUrls": [
+      "/first_message.jpg"
+    ],
+    "mediaType": "image",
+    "category": "date",
+    "icon": "💬"
+  },
+  {
+    "id": "3",
+    "title": "Our First Call",
+    "date": "April 15, 2023",
+    "location": "Late Night Call",
+    "description": "Hearing your voice through the phone for the first time. What was supposed to be a 'quick five-minute call' lasted three hours. We laughed about the silliest things and talked about our childhood dreams. Hearing you say my name felt like music.",
+    "quote": "Hearing Kashish's voice for the first time felt like coming home.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "date",
+    "icon": "📱"
+  },
+  {
+    "id": "4",
+    "title": "Our First Video Call",
+    "date": "April 17, 2023",
+    "location": "FaceTime",
+    "description": "Seeing your face on screen, lit up by the warm glow of your lamp. You were sitting on your bed, wearing comfortable pyjamas, and looking absolutely beautiful without even trying. Distance didn't matter when you smiled at me like that.",
+    "quote": "Screen distances faded whenever Kashish smiled through my phone.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "date",
+    "icon": "🎥"
+  },
+  {
+    "id": "5",
+    "title": "Our First Date",
+    "date": "April 20, 2023",
+    "location": "The Cozy Grind Cafe",
+    "description": "Sitting across from you under the dim fairy lights of the cafe. You ordered a caramel macchiato and got cream on your nose, and I had to resist the urge to kiss you right then. We lost track of time talking, planning, and laughing together.",
+    "quote": "Every moment with Kashish became a page I never want to stop reading.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "date",
+    "icon": "☕"
+  },
+  {
+    "id": "6",
+    "title": "Our First Selfie",
+    "date": "April 22, 2023",
+    "location": "Park Promenade",
+    "description": "Squeezing close together to fit into the frame. You made a funny face, I smiled wide, and we captured our very first photo together. Seeing our smiles side-by-side made me realize how perfectly we fit into each other's lives.",
+    "quote": "In a simple photo, I saw our entire future together.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600",
+      "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "milestone",
+    "icon": "📸"
+  },
+  {
+    "id": "7",
+    "title": "The First Gift",
+    "date": "May 10, 2023",
+    "location": "Rohit's Home",
+    "description": "You surprised me with a hand-painted mug and a small box of chocolates. It wasn't just a gift; it was the warmth and thought you poured into making it. I still keep that mug as a reminder of your sweet heart, Kashish.",
+    "quote": "The sweetest gifts are the ones that hold Kashish's touch.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "milestone",
+    "icon": "🎁"
+  },
+  {
+    "id": "8",
+    "title": "Our Funniest Memories",
+    "date": "June 15, 2023",
+    "location": "Amusement Park",
+    "description": "Getting completely drenched in the water slide, losing our sunglasses, and eating dripping cotton candy in the wind. Laughing until our stomachs hurt because of my clumsy walk. I love how happy and free we are when we're together.",
+    "quote": "Every smile of Kashish became my favorite reason to smile.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1516624683217-bf02fc6b6b7c?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "daily",
+    "icon": "😂"
+  },
+  {
+    "id": "9",
+    "title": "Adventures with Kashish",
+    "date": "August 15, 2023",
+    "location": "Coastal Highway Trip",
+    "description": "Windows rolled down, music playing, and the ocean breeze in our hair. Sing-alongs to cheesy love songs and getting lost in small coastal towns. Sharing the driver's seat and stopping to watch the sunset over the cliffs. Every mile was magical.",
+    "quote": "Every road with Kashish next to me is a path leading to paradise.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=600",
+      "https://images.unsplash.com/photo-1475483768296-6163e08872a1?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "travel",
+    "icon": "✈️"
+  },
+  {
+    "id": "10",
+    "title": "Festivals & Celebrations",
+    "date": "November 12, 2023",
+    "location": "Our Decorated Balcony",
+    "description": "Celebrating our first festival of lights together. You helped me light the little oil lamps and decorated the floor with flowers. Watching the small sparks light up your eyes as you laughed was the most beautiful light I had ever seen.",
+    "quote": "Kashish brings a celebration to my heart every single day.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "travel",
+    "icon": "🎉"
+  },
+  {
+    "id": "11",
+    "title": "Favorite Moments Together",
+    "date": "December 24, 2023",
+    "location": "Cozy Cabin in the Hills",
+    "description": "Sharing hot chocolate by the fireplace while watching the snow fall outside. Cozy sweaters, movie marathons, and the warm feeling of holding you close, Kashish. We sat in silence, knowing we were exactly where we belonged.",
+    "quote": "Home isn't a place, Kashish. Home is wherever you are.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600",
+      "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "milestone",
+    "icon": "💖"
+  },
+  {
+    "id": "12",
+    "title": "Challenges We Overcame",
+    "date": "February 20, 2024",
+    "location": "Struggle Days",
+    "description": "Going through tough career days and personal stress, but holding hands tighter. We had arguments, but we listened, grew, and stood by each other. You held me when I was down, and taught me what real partnership looks like.",
+    "quote": "Standing beside Kashish made me strong enough to conquer any storm.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "daily",
+    "icon": "🤝"
+  },
+  {
+    "id": "13",
+    "title": "Today",
+    "date": "June 2026",
+    "location": "Our Quiet Space",
+    "description": "Here we are, years later, still sharing coffees, silly text messages, and late-night calls. Our love has grown deeper, quieter, and stronger. I look at you today, Kashish, and my heart still does that little flip it did when we first met.",
+    "quote": "Time passed, but my love for Kashish only became stronger.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1475483768296-6163e08872a1?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "milestone",
+    "icon": "🌅"
+  },
+  {
+    "id": "14",
+    "title": "Forever Begins...",
+    "date": "The Future",
+    "location": "All of Our Tomorrows",
+    "description": "As I write this birthday surprise, I look forward to all the unwritten pages of our diary. SP spontaneous road trips, house hunts, quiet breakfast plates, and holding hands at eighty. This is just our beginning, my love.",
+    "quote": "You are my today and all of my tomorrows, Kashish.",
+    "mediaUrls": [
+      "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=600"
+    ],
+    "mediaType": "image",
+    "category": "milestone",
+    "icon": "💍"
+  }
+]

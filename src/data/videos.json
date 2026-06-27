@@ -1,0 +1,62 @@
+[
+  {
+    "id": "v1",
+    "title": "Our First Video Together",
+    "date": "April 28, 2023",
+    "duration": "0:14",
+    "description": "Walking slowly through the overgrown forest paths, hand in hand. Every branch, every sunbeam felt like it was there just to witness our start, Kashish. We couldn't stop looking at each other.",
+    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-couple-walking-in-a-forest-close-up-39744-large.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600",
+    "favorite": false
+  },
+  {
+    "id": "v2",
+    "title": "Beach Laughs & Warm Sands",
+    "date": "June 25, 2023",
+    "duration": "0:12",
+    "description": "Running along the wet shoreline, letting the waves catch our feet. Kashish, you kept laughing because the sand was so squishy. That sound is still my absolute favorite melody.",
+    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-happy-couple-walking-along-the-beach-39757-large.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1516624683217-bf02fc6b6b7c?q=80&w=600",
+    "favorite": false
+  },
+  {
+    "id": "v3",
+    "title": "Dinner Date Celebrations",
+    "date": "November 12, 2023",
+    "duration": "0:10",
+    "description": "Cheers to another beautiful month together, Kashish. Sitting across from you in the candlelit restaurant, clinking glasses, and wishing this dinner would never have to end.",
+    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-couple-clinking-glasses-in-a-restaurant-39746-large.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=600",
+    "favorite": true
+  },
+  {
+    "id": "v4",
+    "title": "Holding Hands on the Highway",
+    "date": "August 15, 2023",
+    "duration": "0:08",
+    "description": "Interlocking fingers during our long spontaneous road trip. No words spoken, just the radio playing soft acoustic tunes and the warmth of your hand in mine, keeping me steady.",
+    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-holding-hands-of-a-couple-close-up-39745-large.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600",
+    "favorite": false
+  },
+  {
+    "id": "v5",
+    "title": "Walking by the Lake Promenade",
+    "date": "May 02, 2024",
+    "duration": "0:12",
+    "description": "A quiet spring stroll under the pink cherry blossoms. You were cold, so we shared my jacket pocket. Spontaneous walks with you, Kashish, are the ones I cherish most.",
+    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-happy-couple-walking-along-the-beach-39757-large.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1475483768296-6163e08872a1?q=80&w=600",
+    "favorite": false
+  },
+  {
+    "id": "v6",
+    "title": "Our Quiet Anniversary Sparks",
+    "date": "April 12, 2026",
+    "duration": "0:10",
+    "description": "Sitting on the terrace floor, drawing shapes with anniversary sparklers. The sparks lit up your beautiful face, and I thanked my stars for bringing you into my life, Kashish.",
+    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-couple-clinking-glasses-in-a-restaurant-39746-large.mp4",
+    "thumbnailUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600",
+    "favorite": true
+  }
+]

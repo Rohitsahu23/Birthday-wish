@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "🌍 More Trips Together",
+    "tag": "Travel",
+    "quote": "To travel is to live, but to travel with you is to live a fairytale.",
+    "description": "Exploring every country, collecting stamps on our passports, and taking blurry photos in front of famous landmarks. I want to hold your hand in Paris, hike with you in Switzerland, and get lost in Tokyo, Kashish.",
+    "promise": "I promise to always carry the heavy luggage and map out the best street food spots for us."
+  },
+  {
+    "id": 2,
+    "title": "🏡 Our Dream Home",
+    "tag": "Life",
+    "quote": "Home is not a place, it is a person. And you are my home, Kashish.",
+    "description": "Building a cozy nest filled with plants that you name, a massive bookshelf for all the books you buy, and a warm kitchen where we can cook our chaotic dinners together.",
+    "promise": "I promise to build you the biggest, coziest reading nook by the window, complete with warm fairy lights."
+  },
+  {
+    "id": 3,
+    "title": "☕ Morning Coffee Together",
+    "tag": "Daily",
+    "quote": "You are my favorite cup of warmth in the quiet morning.",
+    "description": "Sitting on the balcony, watching the sunrise in our pyjamas, sipping warm tea, and sharing lazy morning conversations before the busy world wakes up, Kashish.",
+    "promise": "I promise to make your coffee just the way you like it, with that extra dash of sweetness."
+  },
+  {
+    "id": 4,
+    "title": "🌸 Growing Old Together",
+    "tag": "Forever",
+    "quote": "Grow old along with me! The best is yet to be.",
+    "description": "Sitting on matching rocking chairs on our porch, holding wrinkled hands, and talking about the crazy memories we made when we were young. Still looking at you with the same love, Kashish.",
+    "promise": "I promise to love you, cherish you, and protect you through every single phase of our life together."
+  },
+  {
+    "id": 5,
+    "title": "🌊 Watching Sunsets Together",
+    "tag": "Nature",
+    "quote": "Sunsets are proof that endings can be beautiful too, especially with you.",
+    "description": "Driving down to the coast, sitting on the sandy shores, and watching the skies bleed into gold and purple, knowing that every sunset brings us closer to a new tomorrow, Kashish.",
+    "promise": "I promise to always drive you to the beach whenever you feel like watching the sun go down."
+  },
+  {
+    "id": 6,
+    "title": "🎄 Celebrating Every Festival",
+    "tag": "Joy",
+    "quote": "Festivals are brighter, lights are warmer when they reflect on your face.",
+    "description": "Decorating our home with warm lights during Diwali, setting up a cute pine tree for Christmas, and celebrating every small festival with laughter, sweets, and love.",
+    "promise": "I promise to always put up the high string lights so you don't have to reach up on chairs."
+  },
+  {
+    "id": 7,
+    "title": "📷 Making New Memories",
+    "tag": "Timeline",
+    "quote": "We don't remember days, we remember moments.",
+    "description": "Filling our physical scrapbooks with endless polaroids, ticket stubs from movies we loved, dried flowers from our walks, and handwritten notes that log our beautiful years, Kashish.",
+    "promise": "I promise to keep our cameras ready to capture every spontaneous smile and candid laugh of yours."
+  },
+  {
+    "id": 8,
+    "title": "🎓 Achieving Our Goals",
+    "tag": "Success",
+    "quote": "Behind every successful step, there is a hand of belief.",
+    "description": "Cheering for you at your big career milestones, supporting your studies, and celebrating our personal successes as a team. We grow stronger together, Kashish.",
+    "promise": "I promise to be your biggest cheerleader, celebrating your wins louder than anyone else."
+  },
+  {
+    "id": 9,
+    "title": "🎂 Celebrating Every Birthday",
+    "tag": "Milestone",
+    "quote": "Every year with you is a new layer of blessing, Kashish.",
+    "description": "Baking cakes, planning surprises, and wishing you a happy birthday with the same excitement every single year. Making sure you feel like the queen you are.",
+    "promise": "I promise to make every birthday surprise even more magical and personal than the last one."
+  },
+  {
+    "id": 10,
+    "title": "❤️ Forever Together",
+    "tag": "Destiny",
+    "quote": "Two souls, one path, one beautiful destiny.",
+    "description": "Facing every wind, riding every wave, and walking through life side by side. Kashish, you are my ultimate destiny, and there is no path I'd rather walk than the one beside you.",
+    "promise": "I promise to choose you, stand by you, and hold your hand through every high and low of this life."
+  }
+]

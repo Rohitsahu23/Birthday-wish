@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Poppins", system-ui, sans-serif;
+  --font-cursive: "Great Vibes", cursive;
+
+  /* Luxury Romantic Color Palette */
+  --color-soft-pink: #ffe3eb;
+  --color-lavender: #ebdcfa;
+  --color-rose-gold: #e0a6aa;
+  --color-gold: #d4af37;
+  --color-cream: #fffef0;
+  --color-peach: #ffdfcc;
+  --color-warm-beige: #faf7f0;
+
+  /* Theme color overrides */
+  --color-love-red: #ff3366;
+  --color-love-dark: #120b18;
+  --color-love-mid: #251630;
+  --color-love-light: #fef8fa;
+
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-aurora: aurora 20s linear infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Base resets & custom scrollbar */
+html, body {
+  background-color: var(--color-love-dark);
+  color: var(--color-love-light);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: auto; /* Handled by Lenis smooth scroll */
+}
+
+/* Custom Scrollbar for Luxury Feeling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-love-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-rose-gold), var(--color-gold));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Utility styles for Luxury & Cinematic theme */
+@utility glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+@utility glass-panel-pink {
+  background: rgba(255, 227, 235, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(224, 166, 170, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(18, 11, 24, 0.3);
+}
+
+@utility border-glow {
+  border-image: linear-gradient(to right, var(--color-rose-gold), var(--color-gold)) 1;
+}
+
+@utility text-glow-gold {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+@utility text-glow-pink {
+  text-shadow: 0 0 10px rgba(255, 51, 102, 0.5), 0 0 20px rgba(255, 51, 102, 0.3);
+}
+
+@utility aurora-gradient {
+  background: linear-gradient(-45deg, #120b18, #251630, #38153c, #1f0b2a, #120b18);
+  background-size: 400% 400%;
+}
+
+/* Hide default cursor on desktops */
+@media (min-width: 1024px) {
+  .custom-cursor-active, 
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}

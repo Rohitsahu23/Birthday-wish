@@ -1,0 +1,98 @@
+[
+  {
+    "id": "p1",
+    "title": "Taco Night Messiness",
+    "date": "May 18, 2023",
+    "location": "Taco Loco Bistro",
+    "caption": "Kashish eating three tacos at once and getting sauce on her chin. Cutest thing ever!",
+    "mediaUrls": ["https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": false,
+    "rotation": -6,
+    "scale": 0.98
+  },
+  {
+    "id": "p2",
+    "title": "Cozy Train Drift",
+    "date": "June 10, 2023",
+    "location": "Express to Munich",
+    "caption": "Kashish fell asleep on my shoulder ten minutes after boarding. I couldn't move my arm, but I was so happy.",
+    "mediaUrls": ["https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": false,
+    "rotation": 5,
+    "scale": 1.02
+  },
+  {
+    "id": "p3",
+    "title": "Rain Dance Spontaneity",
+    "date": "July 04, 2023",
+    "location": "Park Promenade",
+    "caption": "Caught in a sudden summer downpour. Instead of running, we danced. Drenched but laughing!",
+    "mediaUrls": ["https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": false,
+    "rotation": -4,
+    "scale": 0.95
+  },
+  {
+    "id": "p4",
+    "title": "My Favorite Smile",
+    "date": "September 12, 2023",
+    "location": "Botanical Greenhouse",
+    "caption": "My absolute favorite smile. Kashish, you make every dark day instantly bright. You look radiant here.",
+    "mediaUrls": ["https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": true,
+    "rotation": 3,
+    "scale": 1.05
+  },
+  {
+    "id": "p5",
+    "title": "Quiet Coffee Morning",
+    "date": "October 22, 2023",
+    "location": "Brew & Bloom",
+    "caption": "Messy morning hair and hot caramel lattes. We sat in comfortable silence for hours. Pure bliss.",
+    "mediaUrls": ["https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": false,
+    "rotation": -7,
+    "scale": 1.0
+  },
+  {
+    "id": "p6",
+    "title": "Holding Hands Forever",
+    "date": "December 31, 2023",
+    "location": "Lake Pier Sunset",
+    "caption": "Entering the new year holding Kashish's hand. I knew right then, I never want to let go.",
+    "mediaUrls": ["https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": true,
+    "rotation": 6,
+    "scale": 1.04
+  },
+  {
+    "id": "p7",
+    "title": "Midnight Work Support",
+    "date": "March 18, 2024",
+    "location": "Rohit's Desk",
+    "caption": "Staying up late studying. Kashish brought me hot cocoa and stayed up just to keep me company. Love her.",
+    "mediaUrls": ["https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": false,
+    "rotation": -3,
+    "scale": 0.97
+  },
+  {
+    "id": "p8",
+    "title": "Sparkler Magic",
+    "date": "April 12, 2024",
+    "location": "Backyard Anniversary",
+    "caption": "One year of us. Sparklers in the night sky, and that warm, cozy hug that melts all my worries away.",
+    "mediaUrls": ["https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=500"],
+    "mediaType": "image",
+    "favorite": false,
+    "rotation": 4,
+    "scale": 1.01
+  }
+]

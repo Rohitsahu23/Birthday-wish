@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Where It All Began",
+    "date": "April 12, 2023",
+    "caption": "The day I met you, Kashish, changed my life forever.",
+    "quote": "Our first glances, our first smiles, and the sudden realization that my world was changing.",
+    "imageUrl": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600"
+  },
+  {
+    "id": 2,
+    "title": "Under the Summer Downpour",
+    "date": "May 28, 2023",
+    "caption": "Drenched, cold, but laughing with all our hearts.",
+    "quote": "Running under a single tiny umbrella, splashing in puddles, and realizing I never wanted to shelter from life's rain with anyone else, Kashish.",
+    "imageUrl": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600"
+  },
+  {
+    "id": 3,
+    "title": "Spontaneous Road Trips",
+    "date": "June 15, 2023",
+    "caption": "Interlocking fingers as the sunset chased our car.",
+    "quote": "No destination, just the open road, our favorite playlist, and the steady warmth of your hand in mine.",
+    "imageUrl": "https://images.unsplash.com/photo-1475483768296-6163e08872a1?q=80&w=600"
+  },
+  {
+    "id": 4,
+    "title": "Our Cozy Winter Cabin",
+    "date": "December 24, 2023",
+    "caption": "Watching the snow fall while drinking hot cocoa.",
+    "quote": "Squeezed together under a woolen blanket, drawing up houses and houses of dreams in our diaries, Kashish.",
+    "imageUrl": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=600"
+  },
+  {
+    "id": 5,
+    "title": "The Saree That Speeched Me",
+    "date": "November 12, 2024",
+    "caption": "You wore a saree, and I completely forgot how to speak.",
+    "quote": "Standing under the festival lights, looking at you, and thanking the stars for giving me the most gorgeous girl in the universe.",
+    "imageUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600"
+  },
+  {
+    "id": 6,
+    "title": "Quiet Pier Whispers",
+    "date": "July 18, 2025",
+    "caption": "Watching the dark ocean waves crash in comfortable silence.",
+    "quote": "Kashish, sitting there beside you, I realized that home is not a place... it is you.",
+    "imageUrl": "https://images.unsplash.com/photo-1516624683217-bf02fc6b6b7c?q=80&w=600"
+  },
+  {
+    "id": 7,
+    "title": "Drawing Sparkler Paths",
+    "date": "April 12, 2026",
+    "caption": "Drawing glowing shapes under our rooftop stars.",
+    "quote": "The sparks lit up your beautiful face, and I silently promised to celebrate you every day of my life, Kashish.",
+    "imageUrl": "https://images.unsplash.com/photo-1475483768296-6163e08872a1?q=80&w=600"
+  },
+  {
+    "id": 8,
+    "title": "Celebrating You Today",
+    "date": "Today",
+    "caption": "Happy Birthday, my love. Let's start our forever.",
+    "quote": "Our story has been beautiful, Kashish... but the best chapters are still waiting to be written. Happy Birthday! ❤️",
+    "imageUrl": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600"
+  }
+]
