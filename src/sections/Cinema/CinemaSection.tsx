@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Film, Play, Calendar, Heart } from 'lucide-react';
+import { Film, Play, Heart, Sparkles } from 'lucide-react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -13,11 +13,11 @@ gsap.registerPlugin(ScrollTrigger);
 interface VideoData {
   id: string;
   title: string;
-  date: string;
+  date?: string;
   duration: string;
   description: string;
   videoUrl: string;
-  thumbnailUrl: string;
+  thumbnailUrl?: string;
   favorite: boolean;
 }
 
@@ -326,9 +326,11 @@ export default function CinemaSection() {
         >
           {/* Video Thumbnail block */}
           <div className="md:w-3/5 aspect-[16/10] bg-black relative overflow-hidden flex items-center justify-center">
-            <img
-              src={featuredVideo.thumbnailUrl}
-              alt={featuredVideo.title}
+            <video
+              src={featuredVideo.videoUrl}
+              preload="metadata"
+              muted
+              playsInline
               className="w-full h-full object-cover group-hover/featured:scale-104 transition-transform duration-1000 ease-out"
             />
             {/* Dark mask overlay */}
@@ -350,7 +352,7 @@ export default function CinemaSection() {
           <div className="md:w-2/5 p-6 md:p-8 flex flex-col justify-center space-y-4">
             <div className="space-y-2">
               <span className="bg-gold/15 text-gold border border-gold/25 px-2.5 py-0.5 rounded-full text-[9px] uppercase tracking-widest font-light inline-flex items-center gap-1.5 shadow-sm">
-                <Calendar size={10} /> {featuredVideo.date}
+                <Sparkles size={10} /> Cinematic
               </span>
               <h3 className="font-serif text-lg md:text-xl lg:text-2xl text-soft-pink tracking-wide leading-tight pt-1">
                 {featuredVideo.title}

@@ -1,62 +1,106 @@
 [
   {
     "id": "v1",
-    "title": "Our First Video Together",
-    "date": "April 28, 2023",
-    "duration": "0:14",
-    "description": "Walking slowly through the overgrown forest paths, hand in hand. Every branch, every sunbeam felt like it was there just to witness our start, Kashish. We couldn't stop looking at each other.",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-couple-walking-in-a-forest-close-up-39744-large.mp4",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=600",
+    "title": "A Special Spring Day",
+    "duration": "0:08",
+    "description": "In the quiet of the morning, your smile caught the sun. Walking hand-in-hand, two souls becoming one, Kashish.",
+    "videoUrl": "/video/VID-20250419-WA0055.mp4",
     "favorite": false
   },
   {
     "id": "v2",
-    "title": "Beach Laughs & Warm Sands",
-    "date": "June 25, 2023",
-    "duration": "0:12",
-    "description": "Running along the wet shoreline, letting the waves catch our feet. Kashish, you kept laughing because the sand was so squishy. That sound is still my absolute favorite melody.",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-happy-couple-walking-along-the-beach-39757-large.mp4",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1516624683217-bf02fc6b6b7c?q=80&w=600",
+    "title": "Chasing Warm Sunsets",
+    "duration": "0:06",
+    "description": "Golden sunset rays that whisper to the sea, every moment with you, Kashish, is where I long to be.",
+    "videoUrl": "/video/VID-20250518-WA0100.mp4",
     "favorite": false
   },
   {
     "id": "v3",
-    "title": "Dinner Date Celebrations",
-    "date": "November 12, 2023",
-    "duration": "0:10",
-    "description": "Cheers to another beautiful month together, Kashish. Sitting across from you in the candlelit restaurant, clinking glasses, and wishing this dinner would never have to end.",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-couple-clinking-glasses-in-a-restaurant-39746-large.mp4",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=600",
+    "title": "Late Summer Walks",
+    "duration": "0:12",
+    "description": "Whispering winds and summer breeze in the air, holding your hands and knowing that love is always there.",
+    "videoUrl": "/video/VID-20250827-WA0020.mp4",
     "favorite": true
   },
   {
     "id": "v4",
-    "title": "Holding Hands on the Highway",
-    "date": "August 15, 2023",
-    "duration": "0:08",
-    "description": "Interlocking fingers during our long spontaneous road trip. No words spoken, just the radio playing soft acoustic tunes and the warmth of your hand in mine, keeping me steady.",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-holding-hands-of-a-couple-close-up-39745-large.mp4",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600",
+    "title": "Cozy Winter Snaps",
+    "duration": "0:10",
+    "description": "In the frosty winter breeze, your laughter keeps me warm. Squeezing close to you, Kashish, safe from any storm.",
+    "videoUrl": "/video/VID-20251207-WA0003.mp4",
     "favorite": false
   },
   {
     "id": "v5",
-    "title": "Walking by the Lake Promenade",
-    "date": "May 02, 2024",
-    "duration": "0:12",
-    "description": "A quiet spring stroll under the pink cherry blossoms. You were cold, so we shared my jacket pocket. Spontaneous walks with you, Kashish, are the ones I cherish most.",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-happy-couple-walking-along-the-beach-39757-large.mp4",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1475483768296-6163e08872a1?q=80&w=600",
+    "title": "Holiday Joy & Giggles",
+    "duration": "0:09",
+    "description": "Your sweet laughter rings like silver bells in the air, a magical tune that drives away every single care.",
+    "videoUrl": "/video/VID-20251222-WA0009.mp4",
     "favorite": false
   },
   {
     "id": "v6",
-    "title": "Our Quiet Anniversary Sparks",
-    "date": "April 12, 2026",
-    "duration": "0:10",
-    "description": "Sitting on the terrace floor, drawing shapes with anniversary sparklers. The sparks lit up your beautiful face, and I thanked my stars for bringing you into my life, Kashish.",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-couple-clinking-glasses-in-a-restaurant-39746-large.mp4",
-    "thumbnailUrl": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=600",
+    "title": "Beginning a New Year Together",
+    "duration": "0:11",
+    "description": "Greeting the new dawn, our fingers interlocked tight, tracing a future painted in warm, golden light.",
+    "videoUrl": "/video/VID-20260114-WA0015.mp4",
     "favorite": true
+  },
+  {
+    "id": "v7",
+    "title": "Precious Chats",
+    "duration": "0:07",
+    "description": "Shared warmth on hostel stairs, a quiet cup of tea, giggling at the silliest things, just you and me.",
+    "videoUrl": "/video/VID-20260116-WA0006.mp4",
+    "favorite": false
+  },
+  {
+    "id": "v8",
+    "title": "Silly Moments Captured",
+    "duration": "0:09",
+    "description": "Tripping over shadows and laughing under the sun, every clumsy step with you, my love, is number one.",
+    "videoUrl": "/video/VID-20260124-WA0031.mp4",
+    "favorite": false
+  },
+  {
+    "id": "v9",
+    "title": "Warm April Afternoon",
+    "duration": "0:10",
+    "description": "Under the shade of green leaves, we sat and talked for hours, building castles in the sky and planting dream flowers.",
+    "videoUrl": "/video/VID-20260403-WA0016.mp4",
+    "favorite": false
+  },
+  {
+    "id": "v10",
+    "title": "June Sunshine Walks",
+    "duration": "0:06",
+    "description": "Summer sunbeams dance as we walk the winding path, matching our strides and bathing in soft aftermath.",
+    "videoUrl": "/video/VID-20260602-WA0003.mp4",
+    "favorite": false
+  },
+  {
+    "id": "v11",
+    "title": "Road Trip Sing-Alongs",
+    "duration": "0:14",
+    "description": "Scenic roads ahead and our favorite song on cue, chasing the horizon, completely lost in you, Kashish.",
+    "videoUrl": "/video/VID-20260615-WA0008.mp4",
+    "favorite": true
+  },
+  {
+    "id": "v12",
+    "title": "Sweet Whispers",
+    "duration": "0:05",
+    "description": "Quiet whispers in the dark, a silent glowing spark, your gentle hand in mine, tracing a love divine.",
+    "videoUrl": "/video/VID_20260522_165411_320.mp4",
+    "favorite": false
+  },
+  {
+    "id": "v13",
+    "title": "Our Precious Moments",
+    "duration": "0:07",
+    "description": "You looked back and smiled, leaving me completely speechless. In that brief frame, my world found its sweet peace.",
+    "videoUrl": "/video/VID_20260522_165417_032.mp4",
+    "favorite": false
   }
 ]

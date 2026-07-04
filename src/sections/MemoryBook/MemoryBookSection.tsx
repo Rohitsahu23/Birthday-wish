@@ -9,10 +9,10 @@ import polaroidsData from '../../data/polaroids.json';
 
 interface PolaroidData {
   id: string;
-  title: string;
-  date: string;
+  title?: string;
+  date?: string;
   location?: string;
-  caption: string;
+  caption?: string;
   mediaUrls: string[];
   mediaType: string;
   favorite: boolean;
@@ -41,9 +41,9 @@ export default function MemoryBookSection() {
     setSelectedMedia({
       urls,
       type: item.mediaType as 'image' | 'video',
-      title: item.title,
-      date: item.date,
-      description: item.caption,
+      title: item.title || '',
+      date: item.date || '',
+      description: item.caption || '',
       initialIndex,
     });
     setModalOpen(true);

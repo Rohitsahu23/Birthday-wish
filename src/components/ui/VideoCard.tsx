@@ -1,15 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Play, Calendar, Heart, Clock } from 'lucide-react';
+import { Play, Heart, Clock } from 'lucide-react';
 
 interface VideoData {
   id: string;
   title: string;
-  date: string;
+  date?: string;
   duration: string;
   description: string;
   videoUrl: string;
-  thumbnailUrl: string;
+  thumbnailUrl?: string;
   favorite: boolean;
 }
 
@@ -19,7 +19,7 @@ interface VideoCardProps {
 }
 
 export default function VideoCard({ video, onClick }: VideoCardProps) {
-  const { title, date, duration, description, videoUrl, thumbnailUrl, favorite } = video;
+  const { title, duration, description, videoUrl, favorite } = video;
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -57,26 +57,15 @@ export default function VideoCard({ video, onClick }: VideoCardProps) {
       {/* Video Preview Frame */}
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-black/40">
         
-        {/* Static Thumbnail image */}
-        <img
-          src={thumbnailUrl}
-          alt={title}
-          className={`w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 ${
-            isHovered ? 'opacity-0' : 'opacity-100'
-          }`}
-          loading="lazy"
-        />
-
-        {/* Hover Autoplay Video player */}
+        {/* Autoplay Video player (acts as thumbnail preview when not hovered) */}
         <video
           ref={videoRef}
           src={videoUrl}
           loop
           muted
           playsInline
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
-            isHovered ? 'opacity-100' : 'opacity-0'
-          }`}
+          preload="metadata"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
 
         {/* Shadow overlays */}
@@ -84,9 +73,6 @@ export default function VideoCard({ video, onClick }: VideoCardProps) {
 
         {/* Top Badges */}
         <div className="absolute top-3 left-3 right-3 flex justify-between items-center z-10 pointer-events-none">
-          <span className="bg-love-dark/85 backdrop-blur-md px-2 py-0.5 rounded-full border border-white/5 text-[8px] uppercase tracking-widest text-gold font-light shadow-sm flex items-center gap-1">
-            <Calendar size={10} /> {date}
-          </span>
           {favorite && (
             <span className="bg-gold/90 text-love-dark px-2 py-0.5 rounded-full text-[8px] uppercase tracking-widest font-semibold flex items-center gap-1 shadow-sm">
               <Heart size={8} fill="currentColor" /> Favorite

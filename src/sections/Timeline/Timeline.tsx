@@ -27,7 +27,7 @@ interface Memory {
 
 export default function Timeline() {
   const memories: Memory[] = memoriesData as Memory[];
-  
+
   // Chapter State Tracker
   const [activeChapter, setActiveChapter] = useState(1);
   const [showTracker, setShowTracker] = useState(false);
@@ -63,11 +63,11 @@ export default function Timeline() {
       "#3d1637", // 8: Funny memories / Sunset orange-violet
       "#2a1435", // 9: Trips / Late evening
       "#1b1030", // 10: Festivals / Twilight indigo
-      "#0f1028", // 11: Cabin / Stars
-      "#07152b", // 12: Challenges / Aurora
-      "#041c2a", // 13: Today / Deep teal
-      "#080714", // 14: Forever / Moonlight violet
-      "#000000"  // Teaser exit / Fade to Black
+      // "#0f1028", // 11: Cabin / Stars
+      // "#07152b", // 12: Challenges / Aurora
+      // "#041c2a", // 13: Today / Deep teal
+      // "#080714", // 14: Forever / Moonlight violet
+      // "#000000"  // Teaser exit / Fade to Black
     ];
 
     const ctx = gsap.context(() => {
@@ -114,13 +114,13 @@ export default function Timeline() {
               const chapterIndex = idx + 1;
               setActiveChapter(chapterIndex);
 
-              // Music cross-fade synchronization zones
+              // Music cross-fade synchronization zones (mapped across 10 chapters)
               let targetTrackIdx = 0;
-              if (chapterIndex >= 1 && chapterIndex <= 4) targetTrackIdx = 0;      // Soft Piano (1)
-              else if (chapterIndex >= 5 && chapterIndex <= 8) targetTrackIdx = 1;  // Acoustic (2)
-              else if (chapterIndex >= 9 && chapterIndex <= 11) targetTrackIdx = 2; // Violin (3)
-              else if (chapterIndex >= 12 && chapterIndex <= 13) targetTrackIdx = 3;// Reflection Cello (4)
-              else if (chapterIndex === 14) targetTrackIdx = 4;                     // Orchestra Theme (5)
+              if (chapterIndex >= 1 && chapterIndex <= 2) targetTrackIdx = 0;      // Soft Piano (1)
+              else if (chapterIndex >= 3 && chapterIndex <= 4) targetTrackIdx = 1;  // Acoustic (2)
+              else if (chapterIndex >= 5 && chapterIndex <= 6) targetTrackIdx = 2;  // Violin (3)
+              else if (chapterIndex >= 7 && chapterIndex <= 8) targetTrackIdx = 3;  // Reflection Cello (4)
+              else if (chapterIndex >= 9 && chapterIndex <= 10) targetTrackIdx = 4; // Orchestra Theme (5)
 
               if (targetTrackIdx !== currentTrackIndex) {
                 currentTrackIndex = targetTrackIdx;
@@ -150,7 +150,7 @@ export default function Timeline() {
   const openLightbox = (urls: string[], initialIndex: number) => {
     const memory = memories.find(m => m.mediaUrls[0] === urls[0]);
     if (!memory) return;
-    
+
     setSelectedMedia({
       urls,
       type: memory.mediaType as 'image' | 'video',
@@ -164,18 +164,18 @@ export default function Timeline() {
 
   // Entry transitions for Cards
   const getCardVariants = (idx: number): Variants => ({
-    hidden: { 
-      opacity: 0, 
-      x: idx % 2 === 0 ? -40 : 40, 
-      y: 20, 
-      filter: 'blur(8px)' 
+    hidden: {
+      opacity: 0,
+      x: idx % 2 === 0 ? -40 : 40,
+      y: 20,
+      filter: 'blur(8px)'
     },
-    visible: { 
-      opacity: 1, 
-      x: 0, 
-      y: 0, 
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
       filter: 'blur(0px)',
-      transition: { type: 'spring', stiffness: 100, damping: 18 } 
+      transition: { type: 'spring', stiffness: 100, damping: 18 }
     }
   });
 
@@ -189,7 +189,7 @@ export default function Timeline() {
       <RosePetals />
 
       <div className="max-w-5xl mx-auto px-6 relative z-10">
-        
+
         {/* HEADER SECTION */}
         <div className="text-center space-y-4 mb-20">
           <motion.span
@@ -198,7 +198,7 @@ export default function Timeline() {
             viewport={{ once: true }}
             className="text-xs uppercase tracking-[0.4em] text-gold font-light block"
           >
-            Chapter I - XIV
+            Chapter I - X
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 15, filter: 'blur(5px)' }}
@@ -232,12 +232,12 @@ export default function Timeline() {
 
         {/* TIMELINE CARDS AREA */}
         <div id="timeline-cards-container" className="relative mt-12 py-8">
-          
+
           {/* Vertical Center Axis Lines */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-[2px] bg-white/10 -translate-x-1/2 pointer-events-none rounded-full" />
-          
+
           {/* Growing Progress Line */}
-          <div 
+          <div
             id="timeline-progress-fill"
             className="absolute left-4 md:left-1/2 top-0 w-[2px] bg-gradient-to-b from-rose-gold via-gold to-rose-gold -translate-x-1/2 pointer-events-none rounded-full"
             style={{ height: '0%', boxShadow: '0 0 10px rgba(212, 175, 55, 0.6)' }}
@@ -256,7 +256,7 @@ export default function Timeline() {
                   id={`timeline-card-${idx}`}
                   className="grid grid-cols-1 md:grid-cols-9 items-center gap-6 md:gap-12 relative"
                 >
-                  
+
                   {/* Left Column Content Spacer/Card */}
                   <div className={`col-span-1 md:col-span-4 order-3 md:order-1 ${isEven ? '' : 'hidden md:block opacity-0 pointer-events-none'}`}>
                     {isEven && (
@@ -292,10 +292,10 @@ export default function Timeline() {
                       transition={{ duration: 1.5, repeat: isActive ? Infinity : 0 }}
                       className="w-8 h-8 rounded-full border bg-love-dark flex items-center justify-center -translate-x-1/2 md:translate-x-0 cursor-pointer select-none"
                     >
-                      <Heart 
-                        size={12} 
-                        fill={isActive ? 'currentColor' : 'none'} 
-                        className={isActive ? 'text-love-red' : 'text-rose-gold/60'} 
+                      <Heart
+                        size={12}
+                        fill={isActive ? 'currentColor' : 'none'}
+                        className={isActive ? 'text-love-red' : 'text-rose-gold/60'}
                       />
                     </motion.div>
                   </div>
@@ -356,9 +356,9 @@ export default function Timeline() {
             className="fixed bottom-6 right-6 z-40 glass-panel-pink px-4 py-2.5 rounded-full border border-white/10 shadow-lg text-[10px] uppercase tracking-widest text-soft-pink font-light flex items-center gap-2 select-none"
           >
             <Heart size={12} fill="currentColor" className="text-love-red animate-pulse" />
-            <span>Chapter {activeChapter} of 14</span>
+            <span>Chapter {activeChapter} of 10</span>
             <span className="text-rose-gold/50">|</span>
-            <span className="text-gold font-medium">{Math.round((activeChapter / 14) * 100)}% Completed</span>
+            <span className="text-gold font-medium">{Math.round((activeChapter / 10) * 100)}% Completed</span>
           </motion.div>
         )}
       </AnimatePresence>

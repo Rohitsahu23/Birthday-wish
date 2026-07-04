@@ -115,3 +115,18 @@ html, body {
     cursor: none !important;
   }
 }
+
+/* 3D Transform Utilities for Book flipping & Card flipping */
+@utility backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@utility transform-style-3d {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+@utility rotate-y-180 {
+  transform: rotateY(180deg);
+}

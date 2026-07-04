@@ -4,10 +4,10 @@ import { MapPin, Heart, Sparkles } from 'lucide-react';
 
 interface PolaroidData {
   id: string;
-  title: string;
-  date: string;
+  title?: string;
+  date?: string;
   location?: string;
-  caption: string;
+  caption?: string;
   mediaUrls: string[];
   mediaType: string;
   favorite: boolean;
@@ -94,7 +94,7 @@ export default function PolaroidCard({ polaroid, onClick }: PolaroidCardProps) {
       <div className="relative aspect-square w-full overflow-hidden bg-love-dark/5 border border-[#e2decb]/60 rounded-[1px]">
         <img
           src={mediaUrls[0]}
-          alt={title}
+          alt={title || "Polaroid Memory"}
           className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
           loading="lazy"
         />
@@ -104,18 +104,22 @@ export default function PolaroidCard({ polaroid, onClick }: PolaroidCardProps) {
 
       {/* Scrapbook handwritten labels and descriptors */}
       <div className="pt-4 px-1 space-y-2 relative">
-        <div className="flex justify-between items-center text-[8px] uppercase tracking-widest text-soft-pink/60 font-medium">
-          <span>{date}</span>
-          {location && (
-            <span className="flex items-center gap-0.5 text-gold/80 font-light">
-              <MapPin size={8} /> {location}
-            </span>
-          )}
-        </div>
+        {(date || location) && (
+          <div className="flex justify-between items-center text-[8px] uppercase tracking-widest text-soft-pink/60 font-medium">
+            <span>{date}</span>
+            {location && (
+              <span className="flex items-center gap-0.5 text-gold/80 font-light">
+                <MapPin size={8} /> {location}
+              </span>
+            )}
+          </div>
+        )}
 
-        <p className="font-cursive text-sm text-[#4e3e3b] leading-tight text-glow-none text-left tracking-wide">
-          {caption}
-        </p>
+        {caption && (
+          <p className="font-cursive text-sm text-[#4e3e3b] leading-tight text-glow-none text-left tracking-wide">
+            {caption}
+          </p>
+        )}
 
         {/* Tiny heart doodle in the bottom corner */}
         <div className="absolute -bottom-2 right-1 text-love-red/20 group-hover:text-love-red group-hover:scale-120 transition-all duration-300">
