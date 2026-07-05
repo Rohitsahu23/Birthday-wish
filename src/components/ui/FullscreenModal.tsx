@@ -24,6 +24,7 @@ export default function FullscreenModal({
   initialIndex = 0,
 }: FullscreenModalProps) {
   const [activeIndex, setActiveIndex] = useState(initialIndex);
+  const [isBuffering, setIsBuffering] = useState(false);
 
   // Sync index when modal opens
   useEffect(() => {
@@ -31,6 +32,11 @@ export default function FullscreenModal({
       setActiveIndex(initialIndex);
     }
   }, [isOpen, initialIndex]);
+
+  // Reset buffering on index changes
+  useEffect(() => {
+    setIsBuffering(false);
+  }, [activeIndex]);
 
   const handleNext = useCallback(() => {
     if (mediaUrls.length <= 1) return;
@@ -99,15 +105,29 @@ export default function FullscreenModal({
               animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
               exit={{ opacity: 0, x: -20, filter: 'blur(4px)' }}
               transition={{ duration: 0.3 }}
-              className="w-full h-full flex items-center justify-center"
+              className="w-full h-full flex items-center justify-center relative"
             >
               {mediaType === 'video' ? (
-                <video
-                  src={currentMediaUrl}
-                  controls
-                  autoPlay
-                  className="w-full h-full object-contain max-h-[50vh] md:max-h-[80vh]"
-                />
+                <div className="relative w-full h-full flex items-center justify-center">
+                  <video
+                    src={currentMediaUrl}
+                    controls
+                    autoPlay
+                    preload="auto"
+                    onWaiting={() => setIsBuffering(true)}
+                    onPlaying={() => setIsBuffering(false)}
+                    onCanPlay={() => setIsBuffering(false)}
+                    onSeeking={() => setIsBuffering(true)}
+                    onSeeked={() => setIsBuffering(false)}
+                    className="w-full h-full object-contain max-h-[50vh] md:max-h-[80vh]"
+                    style={{ willChange: 'transform', transform: 'translateZ(0)' }}
+                  />
+                  {isBuffering && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-[2px] z-30 pointer-events-none">
+                      <div className="w-12 h-12 border-4 border-gold/30 border-t-gold rounded-full animate-spin" />
+                    </div>
+                  )}
+                </div>
               ) : (
                 <img
                   src={currentMediaUrl}

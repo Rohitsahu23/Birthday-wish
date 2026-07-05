@@ -19,7 +19,7 @@ interface QuoteItem {
 
 export default function LoveLetterSection() {
   const quotes: QuoteItem[] = quotesData as QuoteItem[];
-  
+
   // Quote Carousel States
   const [currentQuoteIdx, setCurrentQuoteIdx] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -82,9 +82,43 @@ export default function LoveLetterSection() {
 
   // Letter copy paragraphs
   const loveLetterParagraphs = [
-    "From the very moment our paths crossed, my world took on colors I never knew existed. You, Kashish, are my quiet in the storm, my laughter in the ordinary, and the beautiful melody that plays in the background of my everyday life.",
-    "Every single day with you is a gift, a scrapbook page filled with shared glances, warm hugs, and dreams we are building hand in hand. You have shown me what it means to be truly loved, and for that, I am forever grateful.",
-    "As we celebrate the beautiful day you were born, I want to promise you my hand, my heart, and my unconditional love for all the tomorrows yet to come. Happy Birthday, beautiful. Here is to us, and to a future that is as bright as your smile."
+    "Happiest birthday my honeypieeee <<<🤍🫶💖...",
+
+    "First of all! May you achieve whatever you want or need in your life 🧿.And aap hamesha khush rhe...I know hamesha khush rehna possible nhi, but I will try ki thodi si khushi de saku aapko(thodi si kya, puri dene ki try karungi 😌, even karti hu... alag baat h gussa bhi kar leti hu...sorry 😔✋🏻... but mera haq hai na babyyyyy 🥰💞).",
+
+    "By the way, I am missing you so much 🥺.Wo toh daily karti hu bachha 😖.Pata h aapko, aap mere liye bahut zyada important hain...ye baat aapko pata hai but time to time yaad dilana padega na bachhuuuu 🤗.",
+
+    "I hope and I pray ki hum dono hamesha saath rhe...Aap mere se hamesha pyaar kare aur hum bhi aapse hamesha pyaar kare 🥺💗.",
+
+    "Aur bahut kuch manifest kiya hai maine, but saari cheezein nahi bol paungi...kyunki sab kuch tab bhi nahi likh paungi...that's what I feel for youuuu 🥺🎀.",
+
+    "THE BOY WHO ALWAYS HAS MY BACK 💌",
+
+    "No matter what, like seriously, chahe kitni bhi fight ho...but careeeee toh bahut karte hain aap mera, no doubt. ❤️",
+
+    "Dar lagta hai aapko khone se...aur aap sochte hain ki hum aapko chhod denge, but yaar hum nahi sochte aisa aur na hum kabhi karenge. 😖",
+
+    "I REALLY LOVE YOU SO MUCHHHH, MY LOVE OF MY LIFE 🌸💕💖",
+
+    "Aur pata hai kya...humko pata hai aapko birthday nahi pasand, kyunki koi aapko kabhi special feel karaya hi nahi.But mai try kar rhi hu ki mai kara sakuuu aapko acha feel 💌.",
+
+    "Kyunki mere paas sirf aap hi ho jiske liye hum sach mein dil se kuch karna chahte hain.I know kuch kuch cheezein nahi kar paate... padhai ye sab, but try karte hain aur karte rahenge.",
+
+    "Mera nature beech mein aa jata hai, but I am trying... not the best, kyunki mann aa jata hai beech mein.Par bahut saari cheezein aapse seekhi hain hum, like healthy cheezon pe dhyan dena.",
+
+    "Aur haa... aap aaj kal apna dhyan nahi rakhte.Please rakhiye babu apna dhyan.Mere paas bas aap hi hain 🥺 (aur aap hi rehne chahiye). 🥰",
+
+    "Toh I guess bahut lamba para ho gaya... tab bhi meri feelings puri likh nahi paayi... 🥺✋🏻",
+
+    "Bas ab yahi likhungi ki AAP HUMESHA KHUSH RHE, JINDABAAD RHE, AABAD RHE 😂🤍, aur mere rhe... ♾️ Goal achieve kariye ❤️, then successfully mere ho jaiye 😺.",
+
+    "Again,",
+
+    "HAPPIEST BIRTHDAY MY SHINCHAN 🎀",
+
+    "(My everything 🧿) ",
+    "mujhe toh samjh hi nhi aa raha ki mai kya likhun aur ye sab padh ke aur bhul chuka hu but only i say i i i really love you...💖 ",
+    "HAPPIEST BIRTHDAY ONCE AGAIN... 🎀💖",
   ];
 
   // GSAP Background color shifts for letter section (twilight lavender into deep midnight violet)
@@ -101,8 +135,8 @@ export default function LoveLetterSection() {
           scrub: 1.2,
         }
       })
-      .to(el, { backgroundColor: "#1e0b1c", duration: 1 }) // Warm twilight magenta
-      .to(el, { backgroundColor: "#0b040e", duration: 1 }); // Deep starry violet
+        .to(el, { backgroundColor: "#1e0b1c", duration: 1 }) // Warm twilight magenta
+        .to(el, { backgroundColor: "#0b040e", duration: 1 }); // Deep starry violet
     }, el);
 
     return () => ctx.revert();
@@ -168,7 +202,7 @@ export default function LoveLetterSection() {
       </div>
 
       <div className="max-w-4xl mx-auto px-6 relative z-20 space-y-24">
-        
+
         {/* CINEMATIC ENTRY SCENE GATE */}
         <div className="text-center space-y-8 py-10">
           <motion.div
@@ -231,7 +265,7 @@ export default function LoveLetterSection() {
         </div>
 
         {/* ROMANTIC QUOTE CAROUSEL */}
-        <div 
+        <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           className="relative max-w-2xl mx-auto py-8 px-4"
@@ -239,7 +273,7 @@ export default function LoveLetterSection() {
           {/* Main glass card carousel content */}
           <div className="glass-panel-pink rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl relative min-h-[160px] flex items-center justify-center text-center overflow-hidden">
             <Quote className="absolute -top-2 -left-2 w-14 h-14 text-rose-gold/10 pointer-events-none" />
-            
+
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentQuoteIdx}

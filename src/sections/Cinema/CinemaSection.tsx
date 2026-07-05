@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Film, Play, Heart, Sparkles } from 'lucide-react';
 import { gsap } from 'gsap';
@@ -235,16 +235,51 @@ export default function CinemaSection() {
     };
   }, []);
 
-  const openPlayer = (video: VideoData) => {
+  const openPlayer = useCallback((video: VideoData) => {
     setSelectedVideo({
       url: video.videoUrl,
       title: video.title,
     });
     setPlayerOpen(true);
-  };
+  }, []);
 
   const featuredVideo = videos[0];
   const gridVideos = videos.slice(1);
+
+  const handleFeaturedClick = useCallback(() => {
+    openPlayer(featuredVideo);
+  }, [openPlayer, featuredVideo]);
+
+  const featuredRef = useRef<HTMLDivElement>(null);
+  const [featuredInView, setFeaturedInView] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+      setFeaturedInView(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setFeaturedInView(entry.isIntersecting);
+      },
+      {
+        threshold: 0.05,
+        rootMargin: '200px', // preload slightly before entering viewport
+      }
+    );
+
+    const current = featuredRef.current;
+    if (current) {
+      observer.observe(current);
+    }
+
+    return () => {
+      if (current) {
+        observer.unobserve(current);
+      }
+    };
+  }, []);
 
   return (
     <div
@@ -321,17 +356,18 @@ export default function CinemaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, type: 'spring', damping: 20 }}
-          onClick={() => openPlayer(featuredVideo)}
+          onClick={handleFeaturedClick}
           className="glass-panel-pink rounded-3xl overflow-hidden shadow-2xl border border-white/10 hover-target cursor-pointer flex flex-col md:flex-row relative group/featured"
         >
           {/* Video Thumbnail block */}
-          <div className="md:w-3/5 aspect-[16/10] bg-black relative overflow-hidden flex items-center justify-center">
+          <div ref={featuredRef} className="md:w-3/5 aspect-[16/10] bg-black relative overflow-hidden flex items-center justify-center">
             <video
-              src={featuredVideo.videoUrl}
-              preload="metadata"
+              src={featuredInView ? featuredVideo.videoUrl : ''}
+              preload={featuredInView ? 'metadata' : 'none'}
               muted
               playsInline
               className="w-full h-full object-cover group-hover/featured:scale-104 transition-transform duration-1000 ease-out"
+              style={{ willChange: 'transform', transform: 'translateZ(0)' }}
             />
             {/* Dark mask overlay */}
             <div className="absolute inset-0 bg-black/30 pointer-events-none" />

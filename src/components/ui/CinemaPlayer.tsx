@@ -20,6 +20,7 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
   const [duration, setDuration] = useState(0);
   const [progress, setProgress] = useState(0);
   const [showControls, setShowControls] = useState(true);
+  const [isBuffering, setIsBuffering] = useState(false);
 
   // Auto-hide controls timer
   const controlsTimeoutRef = useRef<any>(null);
@@ -36,9 +37,9 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
     }, 3000);
   }, [isPlaying]);
 
-  const handleMouseMove = () => {
+  const handleMouseMove = useCallback(() => {
     resetControlsTimeout();
-  };
+  }, [resetControlsTimeout]);
 
   useEffect(() => {
     resetControlsTimeout();
@@ -89,20 +90,20 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, isPlaying, togglePlay, onClose]);
 
-  const handleTimeUpdate = () => {
+  const handleTimeUpdate = useCallback(() => {
     const video = videoRef.current;
     if (!video) return;
     setCurrentTime(video.currentTime);
     setProgress((video.currentTime / video.duration) * 100);
-  };
+  }, []);
 
-  const handleLoadedMetadata = () => {
+  const handleLoadedMetadata = useCallback(() => {
     const video = videoRef.current;
     if (!video) return;
     setDuration(video.duration);
-  };
+  }, []);
 
-  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSeek = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const video = videoRef.current;
     if (!video) return;
     const newProgress = Number(e.target.value);
@@ -111,9 +112,9 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
     setProgress(newProgress);
     setCurrentTime(newTime);
     resetControlsTimeout();
-  };
+  }, [duration, resetControlsTimeout]);
 
-  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleVolumeChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const video = videoRef.current;
     if (!video) return;
     const newVol = Number(e.target.value);
@@ -122,9 +123,9 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
     video.muted = newVol === 0;
     setIsMuted(newVol === 0);
     resetControlsTimeout();
-  };
+  }, [resetControlsTimeout]);
 
-  const toggleMute = () => {
+  const toggleMute = useCallback(() => {
     const video = videoRef.current;
     if (!video) return;
     if (isMuted) {
@@ -136,9 +137,9 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
       setIsMuted(true);
     }
     resetControlsTimeout();
-  };
+  }, [isMuted, volume, resetControlsTimeout]);
 
-  const toggleFullscreen = () => {
+  const toggleFullscreen = useCallback(() => {
     const container = playerContainerRef.current;
     if (!container) return;
 
@@ -149,7 +150,15 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
     } else {
       document.exitFullscreen();
     }
-  };
+  }, []);
+
+  const handlePlay = useCallback(() => setIsPlaying(true), []);
+  const handlePause = useCallback(() => setIsPlaying(false), []);
+  const handleWaiting = useCallback(() => setIsBuffering(true), []);
+  const handlePlaying = useCallback(() => setIsBuffering(false), []);
+  const handleCanPlay = useCallback(() => setIsBuffering(false), []);
+  const handleSeeking = useCallback(() => setIsBuffering(true), []);
+  const handleSeeked = useCallback(() => setIsBuffering(false), []);
 
   const formatTime = (timeInSeconds: number) => {
     if (isNaN(timeInSeconds)) return '0:00';
@@ -199,11 +208,25 @@ export default function CinemaPlayer({ isOpen, onClose, videoUrl, title }: Cinem
           onClick={togglePlay}
           onTimeUpdate={handleTimeUpdate}
           onLoadedMetadata={handleLoadedMetadata}
-          onPlay={() => setIsPlaying(true)}
-          onPause={() => setIsPlaying(false)}
+          onPlay={handlePlay}
+          onPause={handlePause}
+          onWaiting={handleWaiting}
+          onPlaying={handlePlaying}
+          onCanPlay={handleCanPlay}
+          onSeeking={handleSeeking}
+          onSeeked={handleSeeked}
+          preload="auto"
           className="w-full h-full object-contain cursor-pointer"
+          style={{ willChange: 'transform', transform: 'translateZ(0)' }}
           autoPlay
         />
+
+        {/* Buffering Indicator Overlay */}
+        {isBuffering && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-30 pointer-events-none">
+            <div className="w-12 h-12 border-4 border-gold/30 border-t-gold rounded-full animate-spin" />
+          </div>
+        )}
 
         {/* Custom Controls Bar */}
         <div 
