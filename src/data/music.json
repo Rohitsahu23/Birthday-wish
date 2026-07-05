@@ -3,14 +3,14 @@
     "id": "1",
     "title": "Melody of Love",
     "artist": "Acoustic Piano Ensemble",
-    "url": "Teri Khair Mangdi Baar Baar Dekho Video Karaoke With Lyrics 256KBPS.mp3",
+    "url": "/MUSIC/Teri_Khair.mp3",
     "cover": "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=150"
   },
   {
     "id": "2",
     "title": "Soft Romance",
     "artist": "Dreamy Guitar Quartet",
-    "url": "Love Beat Instrumental Type Beat Latest.mp3",
+    "url": "/MUSIC/love_beat.mp4",
     "cover": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=150"
   },
   {
@@ -31,7 +31,7 @@
     "id": "5",
     "title": "Cinematic Journey",
     "artist": "Philharmonic Orchestra",
-    "url": "Teri Khair Mangdi Baar Baar Dekho Video Karaoke With Lyrics 256KBPS.mp3",
+    "url": "/MUSIC/Teri_Khair.mp3",
     "cover": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?q=80&w=150"
   }
 ]
