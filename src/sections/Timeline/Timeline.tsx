@@ -63,11 +63,11 @@ export default function Timeline() {
       "#3d1637", // 8: Funny memories / Sunset orange-violet
       "#2a1435", // 9: Trips / Late evening
       "#1b1030", // 10: Festivals / Twilight indigo
-      // "#0f1028", // 11: Cabin / Stars
-      // "#07152b", // 12: Challenges / Aurora
-      // "#041c2a", // 13: Today / Deep teal
-      // "#080714", // 14: Forever / Moonlight violet
-      // "#000000"  // Teaser exit / Fade to Black
+      "#0f1028", // 11: Cabin / Stars
+      "#07152b", // 12: Challenges / Aurora
+      "#041c2a", // 13: Today / Deep teal
+      "#080714", // 14: Forever / Moonlight violet
+      "#000000"  // Teaser exit / Fade to Black
     ];
 
     const ctx = gsap.context(() => {
